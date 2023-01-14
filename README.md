@@ -5,3 +5,6 @@ Machine Learning menggunakan Metode Convolutional Neural Network dengan arsitekt
 - Dinda Puspa Aprilia - 202010370311261 [Dinda](https://github.com/dindapuspaaprilia)
 - Muhammad Arvanda Fildza Aliffa Putra - 202010370311285 [Arvanda](https://github.com/arvandza)
 - Prayogi Putra Deluhula - 20081104061 [Prayogi](https://github.com/pdeluhula)
+
+## DATASET
+https://data.mendeley.com/datasets/s82j8dh4rr [Indonesian Herb Leaf Dataset 3500](https://data.mendeley.com/datasets/s82j8dh4rr)
