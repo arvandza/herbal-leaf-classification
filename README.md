@@ -7,4 +7,4 @@ Machine Learning menggunakan Metode Convolutional Neural Network dengan arsitekt
 - Prayogi Putra Deluhula - 20081104061 [Prayogi](https://github.com/pdeluhula)
 
 ## DATASET
-https://data.mendeley.com/datasets/s82j8dh4rr [Indonesian Herb Leaf Dataset 3500](https://data.mendeley.com/datasets/s82j8dh4rr)
+[Indonesian Herb Leaf Dataset 3500](https://data.mendeley.com/datasets/s82j8dh4rr)
