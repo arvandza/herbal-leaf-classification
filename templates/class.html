@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Leaves Classification</title>
+
+    <style>
+.main-classify{
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-classify{
+    width: 50%;
+    margin: auto;
+}
+.img-classify{
+    width: 90%;
+    margin: 20px auto;
+}
+.img-classify img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.table-result{
+    width: 50%;
+    margin: auto;
+}
+.table-result table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+.table-result table th{
+    height: 30px;
+    background-color: #121212;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.table-result td{
+    background-color: rgb(227, 227, 227);
+}
+.button{
+    width: 50%;
+    margin: 20px auto;
+}
+.button button{
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #161616;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.button button:hover{
+    background-color: #121212;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <section class="main-classify">
+        <div class="container-classify">
+            <div class="img-classify">
+                <img src="{{ url_for('send_file', filename=image_file_name)}}" class="pred_img">
+            </div>
+            <div class="table-result">
+                <table border="2">
+                    <tr>
+                        {% for labels in label %}
+                        <th>{{ labels }}</th>
+                        {% endfor %}
+                    </tr>       
+                    <tr>
+                        {% for probs in prob %}
+                        <td>{{ probs }}%</td>
+                        {% endfor %}
+                    </tr>                                
+                </table>
+            </div>
+    
+            <div class="button">
+                <form>
+                    <button type="submit" formaction="/">Back to Home</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

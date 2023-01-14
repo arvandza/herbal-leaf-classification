@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/static/styles/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Herbal Leaves Classification</title>
+    </head>
+    <body>
+        <img src="/static/img/shape.png" alt="shape" class="shape">
+        <div class="line"></div>
+        <div class="container"><img src="/static/img/leaves.png" alt="leaves" class="contain"></div>
+        <div class="round"><img src="/static/img/leaves2.png" alt="leaves2" class="contain-2"></div>      
+        <div class="main">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/dataset">Dataset</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </div>
+            </nav>         
+        </div>
+        <section class="centered">
+            <div class="title">
+                <h2>Herbal Leaves Classification</h2>
+                <p>A <strong>Machine Learning</strong> that can classify <strong>Herbal Leaves</strong> from Indonesia using the <strong>CNN method </strong></p>
+            </div>
+            <form action="/classify" method="post" enctype="multipart/form-data" class="pond">
+                <input type="file"
+                    class="file-upload-input"
+                    name="image"
+                    id="image"
+                    onchange="return fileValidation()"/>      
+                <input type="submit" value="Classify" class="btn-submit" name = "image" id="classify_button">
+            </form>
+        </section>
+
+        <script src="/static/script.js"></script>
+    </body>
+</html>
