@@ -2,6 +2,7 @@ import os
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
+from werkzeug.utils import secure_filename
 import skimage
 from flask import Flask, render_template, request, send_from_directory
 
@@ -61,7 +62,7 @@ def upload_file():
     else:
         try:
             file = request.files["image"]
-            upload_image_path = os.path.join(UPLOAD_FOLDER, file.filename)
+            upload_image_path = os.path.join(dir_path,'static','uploads', secure_filename(file.filename))
             print(upload_image_path)
             file.save(upload_image_path)
         except FileNotFoundError:
