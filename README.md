@@ -8,3 +8,7 @@ Machine Learning menggunakan Metode Convolutional Neural Network dengan arsitekt
 
 ## DATASET
 [Indonesian Herb Leaf Dataset 3500](https://data.mendeley.com/datasets/s82j8dh4rr)
+
+
+## WEBSITE
+[Herbal Leaf Classification Website](https://herb-leaf-classification.herokuapp.com/)
