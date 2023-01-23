@@ -13,7 +13,7 @@ Machine Learning menggunakan Metode Convolutional Neural Network dengan arsitekt
    `conda activate <enviroment_name>`
 3. Install Dependency Package dengan perintah\
    `pip install -r requirements.txt`
-4. Run API dengan perintah
+4. Run API dengan perintah\
    `python app.py`   
 
 ## DATASET
