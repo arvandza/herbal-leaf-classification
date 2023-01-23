@@ -7,13 +7,13 @@ Machine Learning menggunakan Metode Convolutional Neural Network dengan arsitekt
 - Prayogi Putra Deluhula - 20081104061 [Prayogi](https://github.com/pdeluhula)
 
 ## API
-1. Buat Enviroment Baru dengan perintah\
+1. Create New Enviroment\
    `conda create -n <enviroment_name> python=3.9`
-2. Aktifkan Enviroment dengan perintah\
+2. Activate Enviroment\
    `conda activate <enviroment_name>`
-3. Install Dependency Package dengan perintah\
+3. Install Dependency Package\
    `pip install -r requirements.txt`
-4. Run API dengan perintah\
+4. Run API\
    `python app.py`   
 
 ## DATASET
