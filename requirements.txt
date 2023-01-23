@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 absl-py==1.4.0
 astunparse==1.6.3
 cachetools==5.2.1
@@ -60,3 +61,13 @@ urllib3==1.26.14
 Werkzeug==2.2.2
 wrapt==1.14.1
 zipp==3.11.0
+=======
+tensorflow-cpu
+numpy
+pillow
+matplotlib
+scikit-image
+scipy
+flask
+gunicorn
+>>>>>>> 962d838 (update)
